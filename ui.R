@@ -5,6 +5,12 @@ shinyUI(fixedPage(
         titlePanel("Literacy and life expectancy: are they related?"),
         sidebarLayout(
                 mainPanel(
+                        p("Hi graders! Sorry to bother you, but... Please note that I made a mistake while 
+                           posting the link to my presentation. The link on Coursera will take you to 
+                           https://rpubs.com/Pixelkracht/60090 but it should be:", 
+                          a("http://rpubs.com/Pixelkracht/60090"),
+                          em("without the 's' after https, that is!"),
+                          style="background: #ffaaaa; padding: 2px;"),
                         tabsetPanel(type = "tabs", 
                                     tabPanel("Literacy and life expectancy", 
                                              showOutput("scat", "polycharts"),
